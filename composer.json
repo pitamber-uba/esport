@@ -1,0 +1,38 @@
+{
+    "name": "esports/registration-system",
+    "description": "ESports merchandise registration and participant management system",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ESports Team",
+            "email": "admin@esports.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ESports\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ESports\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "serve": "php -S localhost:8000"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
